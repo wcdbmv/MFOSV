@@ -10,3 +10,9 @@ bin/pan: bin/pan.c
 
 dot: bin/pan
 	bin/pan -D
+
+bin/main: bin main.cpp
+	clang++ -std=c++20 main.cpp -o bin/main
+
+run: bin/main
+	bin/main
