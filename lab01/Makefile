@@ -1,7 +1,7 @@
 bin:
 	mkdir bin
 
-bin/pan.c: bin
+bin/pan.c: bin main.pml
 	spin -a main.pml
 	mv pan* bin
 
